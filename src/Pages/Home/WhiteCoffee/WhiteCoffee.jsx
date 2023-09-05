@@ -12,19 +12,19 @@ const WhiteCoffee = () => {
         strength={-300}
       >
         <div
-          className="bg-no-repeat bg-cover"
+          className="bg-no-repeat bg-cover mt-10"
           // style={{ backgroundImage: `url('${bg}')` }}
         >
-          <div className="container mx-auto ">
-            <div className="flex items-center justify-around">
-              <div className="">
-                <h2 className="text-8xl">
+          <div className="container mx-auto p-2">
+            <div className="md:flex items-center justify-around">
+              <div className="text-center">
+                <h3 className="text-5xl md:text-8xl">
                   White <br /> Coffee
-                </h2>
-                <button className="mt-3 btn btn-primary">Order Now</button>
+                </h3>
+                <button className="green-btn">Order Now</button>
               </div>
-              <div className="w-4/12 flex flex-col items-center">
-                <img className=" mb-14" src={img} alt="" />
+              <div className="md:w-4/12 flex flex-col items-center">
+                <img className="mb-6 md:mb-14" src={img} alt="" />
                 <p className="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptatibus vel laudantium assumenda non minus nihil nisi.

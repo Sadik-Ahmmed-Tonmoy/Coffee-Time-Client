@@ -10,21 +10,21 @@ const CustomerReviews = () => {
         // blur={{ min: -15, max: 15 }}
         bgImage={bg}
         bgImageAlt="the dog"
-        strength={-100}
+        strength={-150}
     >
-      <div className='container mx-auto h-screen  text-cente'>
+      <div className='container mx-auto py-16 flex flex-col items-center justify-center'>
      
-      <h2 className='text-center text-6xl my-8'>Customer Reviews</h2>
+      <h3 className='text-center text-5xl md:text-8xl my-8'>Customer Reviews</h3>
             <div className='flex justify-evenly'>
 <div className='mx-auto text-center '>
     <img className='mx-auto' src={img1} alt="" />
-    <h3>John Peter</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, consequuntur.</p>
+    <h3 className="text-4xl">John Peter</h3>
+    <p className='w-4/6 mx-auto'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, consequuntur.</p>
 </div>
 <div className='mx-auto text-center '>
     <img className='mx-auto' src={img2} alt="" />
-    <h3>John Peter</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, consequuntur.</p>
+    <h3 className="text-4xl">Ella Thomas</h3>
+    <p className='w-4/6 mx-auto'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, consequuntur.</p>
 </div>
 
 

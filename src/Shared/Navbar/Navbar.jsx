@@ -57,7 +57,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <img className="h-10 me-10" src={logo} alt="" />
+          <img className="h-10 md:me-10" src={logo} alt="" />
         </div>
       </div>
     </>
