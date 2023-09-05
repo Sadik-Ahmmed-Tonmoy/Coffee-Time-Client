@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <img className="h-10 md:me-10" src={logo} alt="" />
-         {user? <button onClick={() => logOut()} className="green-btn me-6">Logout</button> : <Link to={'/login'}><button className="green-btn me-6">Login</button></Link>}
+         {user? <button onClick={() => logOut()} className="green-btn mx-2 md:me-6">Logout</button> : <Link to={'/login'}><button className="green-btn mx-2 md:me-6">Login</button></Link>}
         </div>
       </div>
     </>
