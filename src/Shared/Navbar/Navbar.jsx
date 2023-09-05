@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
 import NavLinkButton from "../../Components/NavLinkButton/NavLinkButton";
 import logo from "../../assets/Logo/LOGO.png";
+import { useContext } from "react";
+import { AuthContext } from './../../providers/AuthProvider/AuthProvider';
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
   return (
     <>
       <div className="navbar bg-transparent fixed z-10">
@@ -58,6 +62,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <img className="h-10 md:me-10" src={logo} alt="" />
+         {user? <button onClick={() => logOut()} className="green-btn me-6">Logout</button> : <Link to={'/login'}><button className="green-btn me-6">Login</button></Link>}
         </div>
       </div>
     </>

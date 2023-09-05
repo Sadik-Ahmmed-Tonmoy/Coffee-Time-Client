@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { FaGoogle } from 'react-icons/fa';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const SocialLogin = () => {
 
@@ -29,6 +30,13 @@ const SocialLogin = () => {
                   .then((res) => res.json())
                   .then(() => {
                       navigate(from, { replace: true });
+                      Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Login Successful',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
                   });
           }).catch((error) => {
             // Handle Errors here.
