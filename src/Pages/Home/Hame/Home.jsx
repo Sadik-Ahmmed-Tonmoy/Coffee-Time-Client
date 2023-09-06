@@ -1,3 +1,4 @@
+import { ScrollRestoration } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import BlackCoffee from "../BlackCoffee/BlackCoffee";
 import CustomerReviews from "../CustomerReviews/CustomerReviews";
@@ -19,6 +20,7 @@ const Home = () => {
             <CustomerReviews/>
             <WeAreOpen/>
             <OurBranches/>
+            <ScrollRestoration/>
         </div>
     );
 };

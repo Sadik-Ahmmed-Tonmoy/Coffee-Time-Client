@@ -13,7 +13,7 @@ const Banner = () => {
         strength={-1000}
     >
       <div className="h-screen flex flex-col md:flex-row md:items-center justify-between pt-20" >
-        <div className="mt-12 md:ms-56 mx-auto p-2">
+        <div className="pt-20 md:mt-0 md:ms-56 mx-auto p-2">
           <h3 className="text-5xl md:text-8xl">Coffee Time</h3>
           <p>headline</p>
           <p>

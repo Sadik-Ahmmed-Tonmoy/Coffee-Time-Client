@@ -21,7 +21,7 @@ const HotCoffee = () => {
                 Explicabo optio deserunt accusantium!
               </p>
             </div>
-            <div>
+            <div className="text-center">
               <h3 className="text-5xl md:text-8xl">
                 Hot <br /> Coffee
               </h3>
