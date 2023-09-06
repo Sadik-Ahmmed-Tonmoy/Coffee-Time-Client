@@ -1,6 +1,9 @@
 import bg from "../../../assets/BlackCoffee/bg.png";
 import img from "../../../assets/BlackCoffee/img.png";
 import { Parallax, Background } from "react-parallax";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const BlackCoffee = () => {
   return (
@@ -17,13 +20,14 @@ const BlackCoffee = () => {
         >
           <div className="container mx-auto p-2">
             <div className="md:flex items-center justify-around">
-              <div className="text-center">
+              <div data-aos-duration="2000" data-aos="fade-left" className="text-center">
                 <h3 className="text-5xl md:text-8xl">
                   Black <br /> Coffee
                 </h3>
                 <button className="black-btn">Order Now</button>
               </div>
-              <div className="md:w-4/12 flex flex-col items-center">
+              <div
+     data-aos-duration="2000" data-aos="fade-right" className="md:w-4/12 flex flex-col items-center">
                 <img className="mb-6 md:mb-14" src={img} alt="" />
                 <p className="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

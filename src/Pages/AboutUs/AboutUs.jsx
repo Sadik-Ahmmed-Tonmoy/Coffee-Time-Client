@@ -2,6 +2,9 @@ import bg from "../../assets/AboutUs/Out.png";
 import cup from "../../assets/AboutUs/Image.png";
 import { Parallax } from "react-parallax";
 import { ScrollRestoration } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const AboutUs = () => {
   return (
@@ -12,8 +15,9 @@ const AboutUs = () => {
         bgImageAlt="the dog"
         strength={-200}
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-10 pt-16">
-          <div className="md:ms-14 text-center">
+        <div  className="grid grid-cols-1 md:grid-cols-3 items-center gap-10 pt-16">
+          <div  data-aos-offset="500"
+     data-aos-duration="2000" data-aos="fade-left" className="md:ms-14 text-center">
             <h3 className="text-5xl md:text-8xl">Contact Us</h3>
 
             <p className="text-center">+880123456789</p>
@@ -21,7 +25,8 @@ const AboutUs = () => {
 
             <p>example@example.com</p>
           </div>
-          <div className="text-center">
+          <div  data-aos-offset="500"
+     data-aos-duration="2000" data-aos="fade-up" className="text-center">
             <h3 className="text-5xl md:text-8xl md:mb-5">Coffee Time</h3>
             <p>
               Welcome to Coffee Time, where every moment is an opportunity to
@@ -37,7 +42,8 @@ const AboutUs = () => {
               the coffee; it's about the experience.
             </p>
           </div>
-          <div className="h-full flex flex-col justify-between">
+          <div  data-aos-offset="500"
+     data-aos-duration="2000" data-aos="fade-left" className="h-full flex flex-col justify-between">
             <div className="mt-0 md:mt-16">
               <h3 className="text-5xl md:text-8xl">Sip, Savor, Repeat.</h3>
               <p>

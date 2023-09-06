@@ -6,7 +6,10 @@ import img2 from "../../../assets/Menu/Images.png";
 import img3 from "../../../assets/Menu/2.png";
 import bg from "../../../assets/Menu/Icon.png";
 import MenuItem from "../MenuItem/MenuItem";
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Menu = () => {
   return (
@@ -37,7 +40,8 @@ const Menu = () => {
           <img src={top} alt="" />
           </div>
         <div className="grid grid-cols-1 md:grid-cols-3">
-          <div className="flex flex-col justify-center items-center">
+          <div  data-aos-offset="500"
+     data-aos-duration="2000" data-aos="fade-right" className="flex flex-col justify-center items-center">
             <img className='' src={img1} alt="" />
             <h3 className='text-4xl md:text-6xl mt-10'>Hot Coffee</h3>
             <MenuItem
@@ -77,7 +81,8 @@ const Menu = () => {
               image={img}
             />
           </div>
-          <div className="flex flex-col justify-center items-center mt-16">
+          <div  data-aos-offset="500"
+     data-aos-duration="2000" data-aos="fade-up" className="flex flex-col justify-center items-center mt-16">
           <h3 className='text-4xl md:text-6xl'>Ice Coffee</h3>
             <MenuItem
               name={"black"}
@@ -117,7 +122,8 @@ const Menu = () => {
             />
             <img className=' -mb-12 md:-mb-24' src={img2} alt="" />
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div  data-aos-offset="500"
+     data-aos-duration="2000" data-aos="fade-left" className="flex flex-col justify-center items-center">
             <img src={img3} alt="" />
             <h3 className='text-4xl md:text-6xl'>coffee Latte</h3>
             <MenuItem
@@ -157,6 +163,7 @@ const Menu = () => {
               image={img}
             />
           </div>
+          <ScrollRestoration />
         </div>
         </div>
       </Parallax>

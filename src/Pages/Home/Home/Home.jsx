@@ -7,6 +7,9 @@ import OurBranches from "../OurBranches/OurBranches";
 import Voucher from "../Voucher/Voucher";
 import WeAreOpen from "../WeAreOpen/WeAreOpen";
 import WhiteCoffee from "../WhiteCoffee/WhiteCoffee";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 
 const Home = () => {
