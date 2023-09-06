@@ -1,7 +1,7 @@
 import image from "../../../assets/Banner/Image.png";
 import bottomDesign from "../../../assets/Banner/Design.png";
-import bg from "../../../assets/Banner/Icon.png";
-import { Parallax, Background } from 'react-parallax';
+import bg from "../../../assets/Banner/Icon (2).png";
+import { Parallax } from 'react-parallax';
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -10,10 +10,10 @@ const Banner = () => {
   return (
     <>
     <Parallax
-        // blur={{ min: -15, max: 15 }}
+        blur={{ min: -15, max: 12 }}
         bgImage={bg}
         bgImageAlt="Coffee"
-        strength={-1000}
+        strength={-200}
     >
       <div className="h-screen flex flex-col md:flex-row md:items-center justify-between pt-20" >
         <div data-aos="fade-up"

@@ -1,4 +1,4 @@
-import bg from "../../../assets/WhitheCoffee/bg.png";
+import bg from "../../../assets/WhitheCoffee/Icon.png";
 import img from "../../../assets/WhitheCoffee/img.png";
 import { Parallax } from "react-parallax";
 import AOS from "aos";
