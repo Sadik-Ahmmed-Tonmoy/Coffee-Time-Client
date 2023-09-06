@@ -63,7 +63,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <img className="h-10 md:me-10" src={logo} alt="" />
+          <Link to={'/'}><img className="h-10 md:me-10" src={logo} alt="" /></Link>
           {user ? (
             <button onClick={() => logOut()} className="green-btn mx-2 md:me-6">
               Logout
