@@ -31,7 +31,7 @@ const Banner = () => {
         </div>
       </div>
    
-      <img className="w-full -mt-[60px] md:-mt-64 z-10" src={bottomDesign} alt="" />
+      <img className="w-full -mt-[60px] md:-mt-72 z-10" src={bottomDesign} alt="" />
       </Parallax>
     </>
   );

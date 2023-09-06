@@ -3,6 +3,7 @@ import bg from "../../assets/Menu/Icon.png";
 import { Parallax } from "react-parallax";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ScrollRestoration } from "react-router-dom";
 AOS.init();
 
 const Blog = () => {
@@ -88,6 +89,7 @@ const Blog = () => {
           </div>
         </div>
       </Parallax>
+      <ScrollRestoration/>
     </>
   );
 };
