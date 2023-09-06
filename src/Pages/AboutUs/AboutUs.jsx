@@ -1,6 +1,5 @@
 import bg from "../../assets/AboutUs/Out.png";
 import cup from "../../assets/AboutUs/Image.png";
-import logo from "../../assets/Logo/LOGO.png";
 import { Parallax } from "react-parallax";
 import { ScrollRestoration } from "react-router-dom";
 
