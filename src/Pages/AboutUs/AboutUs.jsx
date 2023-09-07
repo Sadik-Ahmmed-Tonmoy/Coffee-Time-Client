@@ -1,9 +1,9 @@
 import bg from "../../assets/AboutUs/Out.png";
 import cup from "../../assets/AboutUs/Image.png";
 import { Parallax } from "react-parallax";
-import { ScrollRestoration } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ScrollRestoration } from "react-router-dom";
 AOS.init();
 
 const AboutUs = () => {
@@ -25,7 +25,7 @@ const AboutUs = () => {
 
             <p>example@example.com</p>
           </div>
-          <div  data-aos-offset="500"
+          <div 
      data-aos-duration="2000" data-aos="fade-up" className="text-center">
             <h3 className="text-5xl md:text-8xl md:mb-5">Coffee Time</h3>
             <p>
@@ -42,7 +42,7 @@ const AboutUs = () => {
               the coffee; it's about the experience.
             </p>
           </div>
-          <div  data-aos-offset="500"
+          <div 
      data-aos-duration="2000" data-aos="fade-left" className="h-full flex flex-col justify-between">
             <div className="mt-0 md:mt-16">
               <h3 className="text-5xl md:text-8xl">Sip, Savor, Repeat.</h3>
@@ -59,7 +59,7 @@ const AboutUs = () => {
           </div>
         </div>
       </Parallax>
-      <ScrollRestoration />
+      <ScrollRestoration/>
     </>
   );
 };

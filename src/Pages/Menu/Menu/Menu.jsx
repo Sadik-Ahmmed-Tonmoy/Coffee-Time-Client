@@ -42,7 +42,7 @@ const Menu = () => {
          
            
           </div>
-          <div  data-aos-offset="500"
+          <div  
      data-aos-duration="2000" data-aos="fade-up" className="flex flex-col justify-center items-center mt-16">
           <h3 className='text-4xl md:text-6xl'>Ice Coffee</h3>
           {
@@ -50,7 +50,7 @@ const Menu = () => {
     }
             <img className=' -mb-12 md:-mb-24' src={img2} alt="" />
           </div>
-          <div  data-aos-offset="500"
+          <div 
      data-aos-duration="2000" data-aos="fade-left" className="flex flex-col justify-center items-center md:-mt-20">
             <img src={img3} alt="" />
             <h3 className='text-4xl md:text-6xl'>coffee Latte</h3>

@@ -4,9 +4,12 @@ import bg from "../../../assets/Banner/Icon (2).png";
 import { Parallax } from 'react-parallax';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import useProducts from './../../../hooks/useProducts';
 AOS.init();
 
 const Banner = () => {
+  const [products] =useProducts()
+  console.log(products);
   return (
     <>
     <Parallax

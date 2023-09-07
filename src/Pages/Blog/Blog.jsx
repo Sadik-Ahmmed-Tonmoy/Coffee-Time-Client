@@ -18,7 +18,6 @@ const Blog = () => {
         <div className="flex flex-col-reverse md:flex-row gap-4">
           <img
             data-aos="zoom-out-right"
-            data-aos-offset="500"
             data-aos-duration="2000"
             className="md:h-screen"
             src={image}

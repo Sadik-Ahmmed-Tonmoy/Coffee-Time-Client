@@ -8,6 +8,8 @@ import Menu from "../Pages/Menu/Menu/Menu";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Blog from "../Pages/Blog/Blog";
 import Home from "../Pages/Home/Home/Home";
+import Dashboard from "../Layout/Dashboard/Dashboard";
+import MyCart from "../Pages/Dashboard/MyCart/MyCart";
  
  
  export const router = createBrowserRouter([
@@ -40,6 +42,18 @@ import Home from "../Pages/Home/Home/Home";
           path: "/signUp",
           element: <SignUp />,
         },
+      ],
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
+      // errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/dashboard/myCart",
+          element: <MyCart />,
+        },
+        
       ],
     },
   ]);
